@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+
+    >
+
+    <!--<group android:checkableBehavior="single">-->
+    <group android:id="@+id/grp1" >
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+
+            />
+    </group>
+    <group android:id="@+id/grp2">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/myprofile"
+            android:title="My Profile"
+            />
+    </group>
+    <group android:id="@+id/grp21">
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/wallet"
+            android:title="My Wallet"
+            />
+    </group>
+    <group android:id="@+id/grp3">
+        <item
+            android:id="@+id/nav_beneficiaries"
+            android:icon="@drawable/beneficiaries"
+            android:title="Beneficiaries"
+            />
+    </group>
+    <!--<group android:id="@+id/grp4">
+        <item
+            android:id="@+id/nav_cards"
+            android:icon="@drawable/cards"
+            android:title="Cards" />
+    </group>-->
+    <group android:id="@+id/grp5">
+    <item
+        android:id="@+id/nav_agents"
+        android:icon="@drawable/agents"
+        android:title="Authorized Agents" />
+
+    </group>
+    <group android:id="@+id/grp6">
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/seetings"
+                android:title="Settings" />
+    </group>
+    <group android:id="@+id/grp7">
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+    </group>
+    <group android:id="@+id/grp8">
+
+    </group>
+
+</menu>

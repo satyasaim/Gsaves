@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eaecec">
+
+    <ImageButton
+        android:id="@+id/ib_card_add_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/close"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <TextView
+        android:id="@+id/tv_card_add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/droidserif_bold"
+        android:gravity="center"
+        android:text="Credit Card Information"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.gsaves.media3.gsaves.app.CreditCardEditText
+        android:id="@+id/et_card_num"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:digits="1234567890"
+        android:maxLength="20"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_add_title" />
+
+    <EditText
+        android:id="@+id/et_card_name"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Card Holder Name"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_num" />
+
+    <EditText
+        android:id="@+id/et_card_id"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Bank Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_name" />
+
+    <EditText
+        android:id="@+id/et_card_cvv"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="CVV"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:maxLength="3"
+        app:layout_constraintBottom_toTopOf="@+id/bt_card_register"
+        app:layout_constraintStart_toEndOf="@+id/spin_year"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_id" />
+
+    <Spinner
+        android:id="@+id/spin_month"
+        android:layout_width="78dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg3"
+
+        app:layout_constraintBottom_toTopOf="@+id/bt_card_register"
+        app:layout_constraintEnd_toStartOf="@+id/spin_year"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_id" />
+
+    <Spinner
+        android:id="@+id/spin_year"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/layout_bg3"
+
+        app:layout_constraintBottom_toTopOf="@+id/bt_card_register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_id" />
+
+    <Button
+        android:id="@+id/bt_card_register"
+        android:layout_width="280dp"
+        android:layout_height="37dp"
+
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="30dp"
+
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/signup"
+        android:fontFamily="@font/droidserif_regular"
+        android:text="Register"
+        android:textColor="@color/fontColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_card_cvv" />
+
+</android.support.constraint.ConstraintLayout>

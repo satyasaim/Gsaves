@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+
+
+
+    defaultConfig {
+        applicationId "com.gsaves.media3.gsaves.app"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    mavenCentral()
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':feature')
+    implementation project(':base')
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    // barcode reader library
+    //implementation 'info.androidhive:barcode-reader:1.1.5'
+
+    // google vision library
+    implementation 'com.google.android.gms:play-services-vision:11.0.2'
+
+    // Facebook Login only
+    implementation 'com.facebook.android:facebook-android-sdk:4.39.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v13:28.0.0'
+
+    // Include all the Twitter APIs
+    implementation 'com.twitter.sdk.android:twitter:3.1.1'
+    // (Optional) Monetize using mopub
+    implementation 'com.twitter.sdk.android:twitter-mopub:3.1.1'
+
+    /*Add QR Zxing Library Here */
+    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
+
+    //Retrofit dependency file
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+
+    implementation 'com.squareup.retrofit2:converter-scalars:2.4.0'
+    // JSON Parsing
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.4.0'
+
+    //Rx Java
+    implementation 'io.reactivex:rxjava:1.1.6'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    implementation 'com.squareup:otto:1.3.6'
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.14.2'
+
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+    implementation 'com.android.support:multidex:1.0.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+
+
+}

@@ -1,0 +1,61 @@
+<resources>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="start_scan">To start, press the \"Start Scan\" button and scan a bar code</string>
+    <string name="chg_pwd"><u>Change Password</u></string>
+
+    <string name="beneficiary_name">Vinay yellanki</string>
+    <string name="beneficiary_agency">University of miami</string>
+
+    <string name="card_name">Visa **** **** ****2157</string>
+    <string name="holder_name">Vinay Y</string>
+
+    <string name="card_name2">Master **** **** ****4256</string>
+    <string name="holder_name2">Rajesh ch</string>
+
+    <string name="recovery_info">Please check your mail for password recovery.</string>
+
+    <string name="signup_link1"><u>New here? Sign Up</u></string>
+
+    <string name="login_link1"><u>Already had an account? Login</u></string>
+
+    <string name="facebook_app_id">363199154474127</string>
+    <string name="fb_login_protocol_scheme">fb363199154474127</string>
+
+    <string name="twitter_CONSUMER_KEY">vOcEUVW3CRmiunfzjGnfJ1ZRK</string>
+    <string name="twitter_CONSUMER_SECRET">uvCTBKeEmhrP1vsaKKUHuKCfWhxs0FUHhsgF7fEzy4BM9mcfY1</string>
+    <string name="working">Working</string>
+    <string name="product_details">Product Details</string>
+    <string name="add_to_wallet">Add to wallet</string>
+    <string name="start_scan2">Start Scan</string>
+    <string name="product_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="textview">TextView</string>
+    <string name="discount">Discount</string>
+    <string name="textview2">TextView</string>
+    <string name="about_us">About Us</string>
+    <string name="select_account_source">Select Account Source</string>
+    <string name="saved_account">Saved Account</string>
+    <string name="new_account">New Account</string>
+    <string name="ok">ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="textview3">TextView</string>
+    <string name="test">Test</string>
+    <string name="todo">TODO</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">LOGIN</string>
+    <string name="e_mail_address">E-mail address</string>
+    <string name="sign_in">Sign in</string>
+    <string name="login2">Login</string>
+    <string name="textview4">TextView</string>
+    <string name="textview5">TextView</string>
+    <string name="textview6">TextView</string>
+    <string name="textview7">TextView</string>
+    <string name="textview8">TextView</string>
+
+</resources>

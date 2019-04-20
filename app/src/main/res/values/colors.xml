@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Gsavesheader">#2ecf8b</color>
+    <color name="fontColor">#ffffff</color>
+    <color name="fontColor2">#34435c</color>
+    <color name="transparent">#002ecf8b</color>
+</resources>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eaecec">
+
+    <ImageButton
+        android:id="@+id/ib_benef_edit_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/close"
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close" />
+
+    <TextView
+        android:id="@+id/tv_card_add_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/droidserif_bold"
+        android:gravity="center"
+        android:text="Beneficiary Edit Data"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_benef_name12"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_card_add_title" />
+
+    <EditText
+        android:id="@+id/et_benef_name22"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_name12" />
+
+    <EditText
+        android:id="@+id/et_benef_id2"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_name22" />
+
+    <EditText
+        android:id="@+id/et_benef_ssn2"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Social Security Number"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_id2" />
+
+    <EditText
+        android:id="@+id/et_benef_mobile2"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Mobile"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_ssn2" />
+
+    <EditText
+        android:id="@+id/et_benef_address2"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg2"
+        android:ems="10"
+        android:fontFamily="@font/droidserif_regular"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_mobile2" />
+
+    <Spinner
+        android:id="@+id/spin_add_benef_agency"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/layout_bg3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_benef_address2" />
+
+    <Button
+        android:id="@+id/bt_benef_update"
+        android:layout_width="280dp"
+        android:layout_height="37dp"
+
+        android:layout_marginStart="30dp"
+
+        android:layout_marginTop="8dp"
+
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/signup"
+        android:fontFamily="@font/droidserif_regular"
+        android:text="Update"
+        android:textColor="@color/fontColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spin_add_benef_agency" />
+
+</android.support.constraint.ConstraintLayout>
